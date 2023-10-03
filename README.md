@@ -16,9 +16,6 @@ pip install psycopg2
 
 ## Getting Started
 
-<details>
-<summary>Click to expand</summary>
-
 ### Step 1: Clone the Repository
 
 Clone this repository using the following command:
