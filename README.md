@@ -24,7 +24,7 @@ pip install psycopg2
 Clone this repository using the following command:
 
 ```bash
-git clone https://github.com/yourusername/crud-postgresql-psycopg2.git
+git clone https://github.com/Aroxed/crud-postgresql-psycopg2.git
 cd crud-postgresql-psycopg2
 ```
 ### Step 2: Configure the Database Connection
