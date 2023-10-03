@@ -49,8 +49,3 @@ class Controller:
         task_id = self.view.get_task_id()
         self.model.delete_task(task_id)
         self.view.show_message("Task deleted successfully!")
-
-
-if __name__ == "__main__":
-    controller = Controller()
-    controller.run()
