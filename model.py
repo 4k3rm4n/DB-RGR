@@ -21,6 +21,21 @@ class Model:
                 description TEXT
             )
         ''')
+
+        # Check if the table exists
+        c.execute("SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = 'tasks')")
+        table_exists = c.fetchone()[0]
+
+        if not table_exists:
+            # Table does not exist, so create it
+            c.execute('''
+                CREATE TABLE tasks (
+                    id SERIAL PRIMARY KEY,
+                    title TEXT NOT NULL,
+                    description TEXT
+                )
+            ''')
+
         self.conn.commit()
 
     def add_task(self, title, description):
