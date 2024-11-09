@@ -6,7 +6,7 @@ class Model:
         self.conn = psycopg.connect(
             dbname='lab1',
             user='postgres',
-            password='Vfdgjxrf1!',
+            password='*********',
             host='localhost',
             port=5432
         )
